@@ -44,6 +44,7 @@
 </head>
 
 <body>
+
     <div class="bg-white">
         <div class="relative isolate">
             <div aria-hidden="true"
@@ -80,6 +81,10 @@
                     SOL
                 </h1>
             </div>
+            <audio id="myAudio">
+                <source src="./audio/song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
             <div class="flex flex-col m-12 justify-center items-center annimated-hidden js-scroll">
                 <div class="text-center">
@@ -238,7 +243,8 @@
                     <p class="text-xl md:text-2xl text-custom-green font-bodoni text-center">
                         Tengo mesa de regalos
                     </p>
-                    <p class="text-3xl md:text-4xl text-custom-green font-bodoni font-bold underline underline-offset-8">
+                    <p
+                        class="text-3xl md:text-4xl text-custom-green font-bodoni font-bold underline underline-offset-8">
                         <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51856041" target="_blank"
                             rel="noopener noreferrer">
                             Liverpool: 51856041
@@ -257,7 +263,8 @@
                     <p class="text-2xl md:text-3xl text-custom-pink font-bodoni font-bold text-center mb-8">
                         Por favor, confirma tu asistencia
                     </p>
-                    <a href="https://wa.me/5513892484?text=Confirmo%20mi%20asistencia%20al%20bautizo%20de%20Sol!" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5513892484?text=Confirmo%20mi%20asistencia%20al%20bautizo%20de%20Sol!"
+                        target="_blank" rel="noopener noreferrer">
                         <button
                             class="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center transition-all ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm bg-transparent relative text-custom-green hover:text-stone-700 border-custom-green hover:bg-transparent duration-150 hover:border-stone-600 rounded-lg hover:opacity-60 hover:shadow-none">
                             WhatsApp
@@ -267,8 +274,17 @@
                 <p class="text-7xl md:text-9xl text-custom-pink font-rouge font-bold">
                     No faltes!!
                 </p>
+
+
+
             </div>
         </div>
+    </div>
+    <div class="fixed bottom-4 right-4">
+        <button class="bg-custom-eggshell hover:bg-stone-50 text-custom-pink font-bold py-3 px-3 rounded-full shadow-lg"
+            id="muteToggleButton">
+            <img src="./images/zombie.png" width=25 />
+        </button>
     </div>
 </body>
 
@@ -284,6 +300,21 @@
     }, { threshold: 0.1 }); // Adjust threshold as needed (0.2 means 20% of element visible)
 
     scrollElements.forEach((el) => observer.observe(el));
+
+    const myAudio = document.getElementById('myAudio');
+    const muteToggleButton = document.getElementById('muteToggleButton');
+
+    function togglePlay() {
+        if (myAudio.paused) {
+            myAudio.play()
+            muteToggleButton.textContent = 'Pause';
+        } else {
+            myAudio.pause()
+            muteToggleButton.innerHTML = "<img src=\"./images/zombie.png\" width=25 />"
+        }
+    }
+
+    muteToggleButton.addEventListener('click', togglePlay);
 </script>
 
 </html>
