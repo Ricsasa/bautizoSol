@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 260">
+  <!-- Colores base -->
+  <!-- rosa: #cf7399 | crema: #f8f1dd | verde: #4a7b3e -->
+
+  <!-- Cuerpo principal de la cruz -->
+  <g id="cross">
+    <!-- brazo vertical -->
+    <rect x="80" y="40" width="40" height="180" fill="#cf7399"/>
+    <!-- brazo horizontal -->
+    <rect x="30" y="90" width="140" height="40" fill="#cf7399"/>
+
+    <!-- parte superior recta -->
+    <rect x="80" y="20" width="40" height="20" fill="#cf7399"/>
+
+    <!-- arco superior exterior -->
+    <path d="M80,20
+             A20,20 0 0 1 120,20
+             V30 H80 Z"
+          fill="#cf7399"/>
+
+    <!-- agujero del arco superior -->
+    <path d="M88,22
+             A12,12 0 0 1 112,22
+             V30 H88 Z"
+          fill="#f8f1dd"/>
+
+    <!-- ondas laterales (izquierda y derecha) -->
+    <!-- izquierda -->
+    <g stroke="#cf7399" stroke-width="3" fill="none">
+      <circle cx="30" cy="100" r="6"/>
+      <circle cx="30" cy="110" r="6"/>
+      <circle cx="30" cy="120" r="6"/>
+    </g>
+    <!-- derecha -->
+    <g stroke="#cf7399" stroke-width="3" fill="none">
+      <circle cx="170" cy="100" r="6"/>
+      <circle cx="170" cy="110" r="6"/>
+      <circle cx="170" cy="120" r="6"/>
+    </g>
+
+    <!-- ondas inferiores -->
+    <g stroke="#cf7399" stroke-width="3" fill="none">
+      <circle cx="90" cy="220" r="6"/>
+      <circle cx="100" cy="220" r="6"/>
+      <circle cx="110" cy="220" r="6"/>
+    </g>
+  </g>
+
+  <!-- Decoración floral central -->
+  <g id="center-flower" transform="translate(100 110)">
+    <!-- pétalos crema -->
+    <circle r="16" fill="#f8f1dd"/>
+    <!-- flor interna rosa -->
+    <path d="M0,-11
+             C4,-11 6,-8 6,-4
+             C6,0 4,2 0,2
+             C-4,2 -6,0 -6,-4
+             C-6,-8 -4,-11 0,-11 Z"
+          fill="#cf7399"/>
+    <!-- centro pequeño crema -->
+    <circle r="4" fill="#f8f1dd"/>
+  </g>
+
+  <!-- Flores laterales (brazo horizontal) -->
+  <g id="side-flower-left" transform="translate(60 110)">
+    <circle r="15" fill="#4a7b3e"/>
+    <path d="M0,-9 L4,-4 9,0 4,4 0,9 -4,4 -9,0 -4,-4 Z"
+          fill="#f8f1dd"/>
+    <circle r="4" fill="#cf7399"/>
+  </g>
+
+  <g id="side-flower-right" transform="translate(140 110)">
+    <circle r="15" fill="#4a7b3e"/>
+    <path d="M0,-9 L4,-4 9,0 4,4 0,9 -4,4 -9,0 -4,-4 Z"
+          fill="#f8f1dd"/>
+    <circle r="4" fill="#cf7399"/>
+  </g>
+
+  <!-- Flores verticales (arriba y abajo) -->
+  <g id="top-flower" transform="translate(100 70)">
+    <circle r="15" fill="#4a7b3e"/>
+    <path d="M0,-9 L4,-4 9,0 4,4 0,9 -4,4 -9,0 -4,-4 Z"
+          fill="#f8f1dd"/>
+    <circle r="4" fill="#cf7399"/>
+  </g>
+
+  <g id="bottom-flower" transform="translate(100 210)">
+    <circle r="15" fill="#4a7b3e"/>
+    <path d="M0,-9 L4,-4 9,0 4,4 0,9 -4,4 -9,0 -4,-4 Z"
+          fill="#f8f1dd"/>
+    <circle r="4" fill="#cf7399"/>
+  </g>
+
+  <!-- Ramas y hojas decorativas -->
+  <!-- rama horizontal -->
+  <g stroke="#f8f1dd" stroke-width="2" fill="none">
+    <path d="M55,110 C75,95 125,95 145,110"/>
+    <!-- hojas -->
+    <path d="M80,101 l7,-8 l-2,10 z" fill="#f8f1dd" stroke="none"/>
+    <path d="M120,101 l-7,-8 l2,10 z" fill="#f8f1dd" stroke="none"/>
+  </g>
+
+  <!-- rama vertical -->
+  <g stroke="#f8f1dd" stroke-width="2" fill="none">
+    <path d="M100,130 C95,145 95,165 100,180
+             C105,195 105,205 100,215"/>
+    <!-- hojas -->
+    <path d="M95,142 l8,-6 l-3,10 z" fill="#f8f1dd" stroke="none"/>
+    <path d="M95,158 l8,-6 l-3,10 z" fill="#f8f1dd" stroke="none"/>
+    <path d="M95,174 l8,-6 l-3,10 z" fill="#f8f1dd" stroke="none"/>
+  </g>
+</svg>

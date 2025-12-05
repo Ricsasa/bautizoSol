@@ -1,0 +1,531 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200">
+  <!-- Definiciones reutilizables -->
+  <defs>
+    <!-- Hoja más realista -->
+    <symbol id="leaf-real">
+      <!-- Contorno de la hoja -->
+      <path d="M0 0 C 8 -10, 18 -10, 26 0 C 18 10, 8 10, 0 0 Z" fill="#2D5128"/>
+      <!-- Nervadura central -->
+      <path d="M13 0 C 13 -4, 13 -8, 13 -11" stroke="#1b3316" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </symbol>
+  </defs>
+
+  <!-- Grupo general de ramas -->
+  <g fill="none" stroke="#2D5128" stroke-linecap="round">
+
+    <!-- Rama principal central dividida en dos -->
+    <!-- Tramo izquierdo -->
+    <path d="M100 120 C 300 40, 450 40, 580 95" stroke-width="8"/>
+    <!-- Tramo derecho -->
+    <path d="M620 95 C 750 40, 900 40, 1100 120" stroke-width="8"/>
+
+    <!-- Rama externa superior -->
+    <path d="M80 110 C 260 20, 940 20, 1120 110" stroke-width="6" opacity="0.9"/>
+
+    <!-- Ramas extra en los extremos para mayor anchura -->
+    <!-- Izquierda -->
+    <path d="M20 135 C 80 60, 140 60, 200 115" stroke-width="5" opacity="0.85"/>
+    <!-- Derecha -->
+    <path d="M1000 115 C 1060 60, 1120 60, 1180 135" stroke-width="5" opacity="0.85"/>
+  </g>
+
+  <!-- Hojas principales y secundarias usando el modelo de hoja realista -->
+  <g>
+    <!-- Hojas sobre la rama principal (tramos izquierdo y derecho) -->
+    <!-- Izquierda -->
+    <use href="#leaf-real" transform="translate(170,112) rotate(-12) scale(0.9)"/>
+    <use href="#leaf-real" transform="translate(230,97) rotate(-8) scale(0.95)"/>
+    <use href="#leaf-real" transform="translate(290,85) rotate(-5) scale(1)"/>
+    <use href="#leaf-real" transform="translate(350,80) rotate(-2) scale(1.05)"/>
+    <use href="#leaf-real" transform="translate(410,78) rotate(3) scale(1.05)"/>
+    <use href="#leaf-real" transform="translate(470,80) rotate(6) scale(1)"/>
+    <use href="#leaf-real" transform="translate(530,82) rotate(8) scale(0.95)"/>
+
+    <!-- Centro derecha -->
+    <use href="#leaf-real" transform="translate(590,78) rotate(4) scale(0.95)"/>
+    <use href="#leaf-real" transform="translate(650,76) rotate(0) scale(1)"/>
+    <use href="#leaf-real" transform="translate(710,80) rotate(-4) scale(1)"/>
+    <use href="#leaf-real" transform="translate(770,85) rotate(-8) scale(0.95)"/>
+
+    <!-- Derecha -->
+    <use href="#leaf-real" transform="translate(830,88) rotate(-10) scale(1)"/>
+    <use href="#leaf-real" transform="translate(890,92) rotate(-12) scale(0.95)"/>
+    <use href="#leaf-real" transform="translate(950,98) rotate(-15) scale(0.9)"/>
+    <use href="#leaf-real" transform="translate(1010,108) rotate(-18) scale(0.9)"/>
+
+    <!-- Hojas en la rama externa superior -->
+    <use href="#leaf-real" transform="translate(145,70) rotate(-22) scale(0.8)"/>
+    <use href="#leaf-real" transform="translate(225,55) rotate(-18) scale(0.8)"/>
+    <use href="#leaf-real" transform="translate(320,40) rotate(-10) scale(0.75)"/>
+    <use href="#leaf-real" transform="translate(880,40) rotate(10) scale(0.75)"/>
+    <use href="#leaf-real" transform="translate(965,55) rotate(18) scale(0.8)"/>
+    <use href="#leaf-real" transform="translate(1045,70) rotate(22) scale(0.8)"/>
+
+    <!-- Hojas inferiores como detalle (cerca de garigoles) -->
+    <use href="#leaf-real" transform="translate(160,150) rotate(25) scale(0.7)"/>
+    <use href="#leaf-real" transform="translate(240,170) rotate(30) scale(0.7)"/>
+    <use href="#leaf-real" transform="translate(940,170) rotate(-30) scale(0.7)"/>
+    <use href="#leaf-real" transform="translate(1020,150) rotate(-25) scale(0.7)"/>
+  </g>
+
+  <!-- Pequeños garigoles discretos (florituras en la rama central) -->
+  <g fill="none" stroke="#2D5128" stroke-width="2.5" opacity="0.85">
+    <!-- Izquierda -->
+    <path d="M220 135 C 205 145, 200 160, 210 170"/>
+    <path d="M280 145 C 265 155, 260 168, 270 178"/>
+
+    <!-- Centro: garigoles extra -->
+    <path d="M540 130 C 525 140, 520 155, 530 165"/>
+    <path d="M660 130 C 675 140, 680 155, 670 167"/>
+
+    <!-- Derecha -->
+    <path d="M920 135 C 935 145, 940 160, 930 170"/>
+    <path d="M860 145 C 875 155, 880 168, 870 178"/>
+  </g>
+
+  <!-- GERBERAS sobre la rama central -->
+
+  <!-- Gerbera pequeña extra izquierda -->
+  <g transform="translate(180,115) scale(0.75)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(348.75)"/>
+    </g>
+    <circle r="6" fill="#fbd267"/>
+    <circle r="3.5" fill="#d9a441"/>
+  </g>
+
+  <!-- Gerbera izquierda mediana -->
+  <g transform="translate(280,110) scale(0.9)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(348.75)"/>
+    </g>
+    <circle r="7" fill="#fbd267"/>
+    <circle r="4" fill="#d9a441"/>
+  </g>
+
+  <!-- Gerbera grande central -->
+  <g transform="translate(600,100) scale(1.1)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-20" rx="5.5" ry="20" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="14" transform="rotate(348.75)"/>
+    </g>
+    <circle r="10" fill="#fbd267"/>
+    <circle r="6" fill="#d9a441"/>
+  </g>
+
+  <!-- Gerbera derecha mediana -->
+  <g transform="translate(920,110) scale(0.9)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(348.75)"/>
+    </g>
+    <circle r="7" fill="#fbd267"/>
+    <circle r="4" fill="#d9a441"/>
+  </g>
+
+  <!-- Gerbera pequeña extra derecha -->
+  <g transform="translate(1020,120) scale(0.75)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="15" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-10" rx="3" ry="11" transform="rotate(348.75)"/>
+    </g>
+    <circle r="6" fill="#fbd267"/>
+    <circle r="3.5" fill="#d9a441"/>
+  </g>
+
+  <!-- NUEVAS GERBERAS EN LOS EXTREMOS DE LA RAMA PRINCIPAL -->
+  <!-- Extremo izquierdo -->
+  <g transform="translate(115,120) scale(0.8)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(348.75)"/>
+    </g>
+    <circle r="7" fill="#fbd267"/>
+    <circle r="4" fill="#d9a441"/>
+  </g>
+
+  <!-- Extremo derecho -->
+  <g transform="translate(1085,120) scale(0.8)">
+    <g fill="#f26d9b">
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(315)"/>
+      <ellipse cx="0" cy="-16" rx="4.5" ry="18" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#f8a8c4">
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(11.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(33.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(56.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(78.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(101.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(123.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(146.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(168.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(191.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(213.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(236.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(258.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(281.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(303.75)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(326.25)"/>
+      <ellipse cx="0" cy="-11" rx="3.5" ry="13" transform="rotate(348.75)"/>
+    </g>
+    <circle r="7" fill="#fbd267"/>
+    <circle r="4" fill="#d9a441"/>
+  </g>
+
+  <!-- FLORES DE BUGAMBILIA (magenta) distribuidas de forma asimétrica -->
+  <g fill="#B8338A" opacity="0.96">
+    <!-- Izquierda -->
+    <g transform="translate(210,100)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.8" fill="#fbd267"/>
+    </g>
+
+    <g transform="translate(260,90) scale(0.9)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.6" fill="#fbd267"/>
+    </g>
+
+    <!-- Cerca del centro -->
+    <g transform="translate(540,115) scale(0.95)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.8" fill="#fbd267"/>
+    </g>
+
+    <!-- Derecha -->
+    <g transform="translate(660,100) scale(1)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.8" fill="#fbd267"/>
+    </g>
+
+    <g transform="translate(840,105) scale(0.9)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.6" fill="#fbd267"/>
+    </g>
+
+    <!-- En rama superior -->
+    <g transform="translate(320,60) scale(0.8)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.5" fill="#fbd267"/>
+    </g>
+
+    <g transform="translate(900,55) scale(0.85)">
+      <path d="M0 0 C -4 -6, -10 -6, -6 0 C -10 4, -4 10, 0 6 C 4 10, 10 4, 6 0 C 10 -6, 4 -6, 0 0 Z"/>
+      <circle cx="0" cy="0" r="1.6" fill="#fbd267"/>
+    </g>
+  </g>
+
+  <!-- TULIPANES distribuidos de forma aleatoria a lo largo de la rama principal -->
+  <g>
+    <!-- Tulipán 1 -->
+    <g transform="translate(220,110)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#E44B6E"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#C0355A"/>
+    </g>
+
+    <!-- Tulipán 2 -->
+    <g transform="translate(340,100) scale(0.9)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#F0585A"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#CC4244"/>
+    </g>
+
+    <!-- Tulipán 3 -->
+    <g transform="translate(460,95) scale(0.85)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#E0447A"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#B8325F"/>
+    </g>
+
+    <!-- Tulipán 4 -->
+    <g transform="translate(640,95) scale(0.9)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#F26C5E"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#C94E45"/>
+    </g>
+
+    <!-- Tulipán 5 -->
+    <g transform="translate(760,100) scale(0.95)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#E9498A"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#B73668"/>
+    </g>
+
+    <!-- Tulipán 6 -->
+    <g transform="translate(880,110) scale(0.9)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#F26C9B"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#C04E75"/>
+    </g>
+
+    <!-- Tulipán 7 -->
+    <g transform="translate(1010,120) scale(0.85)">
+      <path d="M0 0 L0 -18" stroke="#2D5128" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M0 -18 C -6 -22, -6 -30, 0 -30 C 6 -30, 6 -22, 0 -18 Z" fill="#E34763"/>
+      <path d="M0 -30 L-4 -36 L0 -32 L4 -36 Z" fill="#B3334A"/>
+    </g>
+  </g>
+
+  <!-- 7 MARIPOSAS distribuidas asimétricamente -->
+  <!-- 1. Izquierda superior -->
+  <g transform="translate(180,60) scale(0.8) rotate(-10)">
+    <ellipse cx="0" cy="0" rx="2.5" ry="8" fill="#6c4a3d"/>
+    <ellipse cx="-7" cy="-3" rx="8" ry="10" fill="#f9a826"/>
+    <ellipse cx="-7" cy="4"  rx="7" ry="9"  fill="#f4c95d"/>
+    <ellipse cx="7"  cy="-3" rx="8" ry="10" fill="#f28482"/>
+    <ellipse cx="7"  cy="4"  rx="7" ry="9"  fill="#f7a1c4"/>
+  </g>
+
+  <!-- 2. Cerca de gerbera izquierda -->
+  <g transform="translate(240,130) scale(0.7) rotate(15)">
+    <ellipse cx="0" cy="0" rx="2.5" ry="8" fill="#6c4a3d"/>
+    <ellipse cx="-6" cy="-3" rx="7" ry="9" fill="#f28482"/>
+    <ellipse cx="6"  cy="-3" rx="7" ry="9" fill="#f7a1c4"/>
+  </g>
+
+  <!-- 3. Arriba del centro -->
+  <g transform="translate(560,45) scale(0.9) rotate(-5)">
+    <ellipse cx="0" cy="0" rx="3" ry="9" fill="#6c4a3d"/>
+    <ellipse cx="-8" cy="-3" rx="9" ry="11" fill="#f9a826"/>
+    <ellipse cx="-8" cy="5"  rx="7" ry="9"  fill="#f4c95d"/>
+    <ellipse cx="8"  cy="-3" rx="9" ry="11" fill="#f28482"/>
+    <ellipse cx="8"  cy="5"  rx="7" ry="9"  fill="#f7a1c4"/>
+  </g>
+
+  <!-- 4. Debajo de gerbera central -->
+  <g transform="translate(620,145) scale(0.7) rotate(20)">
+    <ellipse cx="0" cy="0" rx="2.5" ry="8" fill="#6c4a3d"/>
+    <ellipse cx="-6" cy="-3" rx="7" ry="9" fill="#f7a1c4"/>
+    <ellipse cx="6"  cy="-3" rx="7" ry="9" fill="#f28482"/>
+  </g>
+
+  <!-- 5. Derecha superior -->
+  <g transform="translate(880,50) scale(0.8) rotate(8)">
+    <ellipse cx="0" cy="0" rx="3" ry="9" fill="#6c4a3d"/>
+    <ellipse cx="-7" cy="-3" rx="8" ry="10" fill="#f28482"/>
+    <ellipse cx="7"  cy="-3" rx="8" ry="10" fill="#f7a1c4"/>
+  </g>
+
+  <!-- 6. Cerca de gerbera derecha -->
+  <g transform="translate(960,135) scale(0.75) rotate(-18)">
+    <ellipse cx="0" cy="0" rx="2.5" ry="8" fill="#6c4a3d"/>
+    <ellipse cx="-6" cy="-3" rx="7" ry="9" fill="#f9a826"/>
+    <ellipse cx="6"  cy="-3" rx="7" ry="9" fill="#f4c95d"/>
+  </g>
+
+  <!-- 7. Inferior derecha -->
+  <g transform="translate(1040,165) scale(0.85) rotate(12)">
+    <ellipse cx="0" cy="0" rx="3" ry="9" fill="#6c4a3d"/>
+    <ellipse cx="-8" cy="-3" rx="9" ry="11" fill="#f28482"/>
+    <ellipse cx="8"  cy="-3" rx="9" ry="11" fill="#f7a1c4"/>
+  </g>
+
+</svg>
