@@ -19,7 +19,7 @@
                 --color-custom-blue: #3b82f6;
                 --color-custom-green: #366645;
                 --color-custom-pink: #DB3A76;
-                --color-custom-eggshell: #F8F0D4;
+                --color-custom-eggshell: #FFFCF3;
                 --font-rouge: 'Rouge Script', serif;
                 --font-bitter: 'Bitter', serif;
                 
@@ -37,7 +37,7 @@
         .show {
             opacity: 1;
             filter: blur(0);
-            transform: translateY(0); 
+            transform: translateY(0);
         }
     </style>
 
@@ -71,7 +71,7 @@
             </div>
 
             <div
-                class="w-full h-80 md:h-[34rem] bg-cover bg-center flex items-center justify-center bg-[url('./images/playa.jpeg')] bg-cover ">
+                class="w-full h-80 md:h-[34rem] bg-cover bg-center flex items-center justify-center bg-[url('./images/playa.jpeg')]">
                 <h1 class="text-custom-green text-7xl md:text-9xl font-bitter drop-shadow-lg font-bold">
                     SOL
                 </h1>
@@ -95,7 +95,7 @@
                 </p>
             </div>
 
-            <div class="flex justify-center items-center animated-hidden js-scroll">
+            <div class="flex justify-center items-center ">
                 <img class="w-100 rotate-180" src="./images/guirnalda1.svg" />
             </div>
 
@@ -133,7 +133,7 @@
                 <div class="md:flex items-center justify-center mt-8 md:m-12 gap-16 animated-hidden js-scroll">
                     <div class="flex flex-col items-center m-8">
                         <div class="text-center">
-                            <p class="text-4xl md:text-4xl text-custom-pink font-rouge px-8 py-2 font-bold">
+                            <p class="text-4xl text-custom-pink font-rouge px-8 py-2 font-bold">
                                 Iglesia
                             </p>
                         </div>
@@ -165,7 +165,7 @@
 
                     <div class="flex flex-col items-center m-8">
 
-                        <p class="text-4xl md:text-4xl text-custom-pink font-rouge px-8 py-2 font-bold">
+                        <p class="text-4xl text-custom-pink font-rouge px-8 py-2 font-bold">
                             Fiesta
                         </p>
 
@@ -184,6 +184,21 @@
                         </p>
                         <div class="mt-4">
                             <a href="https://maps.app.goo.gl/7BRiqmD2uhAX1z7L9" target="_blank"
+                                rel="noopener noreferrer">
+                                <button
+                                    class="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center transition-all ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm bg-transparent relative text-custom-green hover:text-stone-700 border-custom-green hover:bg-transparent duration-150 hover:border-stone-600 rounded-lg hover:opacity-60 hover:shadow-none">
+                                    Google Maps
+                                </button>
+                            </a>
+                        </div>
+                        <p class="font-bitter text-custom-green text-center mt-12">
+                            La terraza tiene pocos lugares!
+                        </p>
+                        <p class="font-bitter text-custom-green text-center">
+                            Te recomendamos el siguiente estacionamiento:
+                        </p>
+                        <div class="mt-4">
+                            <a href="https://maps.app.goo.gl/8jVG6JvNGd7LiStz7" target="_blank"
                                 rel="noopener noreferrer">
                                 <button
                                     class="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center transition-all ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-2 px-4 shadow-sm bg-transparent relative text-custom-green hover:text-stone-700 border-custom-green hover:bg-transparent duration-150 hover:border-stone-600 rounded-lg hover:opacity-60 hover:shadow-none">
@@ -227,7 +242,7 @@
                         <p class="text-custom-green bg-custom-eggshell font-bitter text-md"> &nbsp;o para hacer
                             música!</p>
                     </div>
-                    <div class="absolute rotate-25 left-60 md:left-90 top-90">
+                    <div class="absolute rotate-330 left-60 md:left-90 top-90">
                         <span class="text-custom-green bg-custom-eggshell font-bitter text-md">No es
                             necesario envolver!</span>
                     </div>
@@ -274,7 +289,7 @@
     <div class="fixed bottom-4 right-4">
         <button class="bg-custom-eggshell hover:bg-stone-50 text-custom-pink font-bold py-3 px-3 rounded-full shadow-lg"
             id="muteToggleButton">
-            <img src="./images/zombie.png" width=25 />
+            <img src="./images/zombie.png" width=55 />
         </button>
     </div>
 </body>
@@ -288,7 +303,7 @@
                 entry.target.classList.add("show");
             }
         });
-    }, { threshold: 0.1 }); // Adjust threshold as needed (0.2 means 20% of element visible)
+    }, { threshold: 0.1 });
 
     scrollElements.forEach((el) => observer.observe(el));
 
@@ -301,7 +316,7 @@
             muteToggleButton.textContent = 'Pause';
         } else {
             myAudio.pause()
-            muteToggleButton.innerHTML = "<img src=\"./images/zombie.png\" width=25 />"
+            muteToggleButton.innerHTML = "<img src=\"./images/zombie.png\" width=55 />"
         }
     }
 
